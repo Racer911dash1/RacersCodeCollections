@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/23 23:49:41 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/23 23:50:35 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int32_t	rcc_atoi(const char *str)
  *
  * @returns The converted value, or 0 on error.
  *
- * @note	rcc_atoi does not detect valid input or overflow.
+ * @note	rcc_atol does not detect valid input or overflow.
  */
 int64_t	rcc_atol(const char *str)
 {
