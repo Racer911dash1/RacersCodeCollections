@@ -6,7 +6,7 @@
 #    By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 18:38:50 by dbakker           #+#    #+#              #
-#    Updated: 2025/07/23 21:43:51 by dbakker          ###   ########.fr        #
+#    Updated: 2025/07/23 22:39:30 by dbakker          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,10 +21,10 @@ HEADERS	:= -I include
 CC		:= cc
 CFLAGS	:= -Wall -Werror -Wextra
 
-SRCS	:= $(wildcard *.c)
+SRCS	:= $(wildcard $(SRCDIR)/*.c)
 
 SRCPATH	:= $(addprefix $(SRCDIR)/,$(SRCS))
-OBJS	:= $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SRCPATH:.$(SRCEXT)=.$(OBJEXT)))
+OBJS	:= $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SRCS:.$(SRCEXT)=.$(OBJEXT)))
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	@mkdir -p $(dir $@)

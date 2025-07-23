@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strings.h                                          :+:      :+:    :+:   */
+/*   rcc_string.h                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/23 19:22:54 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/23 22:36:34 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRINGS_H
-# define STRINGS_H
+#ifndef RCC_STRING_H
+# define RCC_STRING_H
 
 # include <stdint.h>
 
 int32_t	rcc_atoi(const char *str);
-
 #endif
