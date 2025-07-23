@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/23 23:29:05 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/23 23:49:41 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int32_t	rcc_atoi(const char *str)
 }
 
 /**
- * @brief Convert @p str to an int.
+ * @brief Convert @p str to a long.
  *
  * @param[in]	str	The String to convert.
  *
