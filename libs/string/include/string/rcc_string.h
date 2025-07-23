@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/23 22:36:34 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/23 23:19:52 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,4 +16,5 @@
 # include <stdint.h>
 
 int32_t	rcc_atoi(const char *str);
+int64_t	rcc_atol(const char *str);
 #endif
