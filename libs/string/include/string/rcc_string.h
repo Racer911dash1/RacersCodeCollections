@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/24 17:13:45 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/24 23:56:12 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdint.h>
 # include <stdbool.h>
+# include <stddef.h>
 
 // rcc_atonum.c
 int32_t	rcc_atoi(const char *str);
@@ -34,4 +35,7 @@ bool rcc_isupper(int c);
 bool rcc_isxdigit(int c);
 bool rcc_isascii(int c);
 bool rcc_isblank(int c);
+// rcc_strchr.c
+char	*rcc_strchr(const char *str, int c);
+char	*rcc_strchrnul(const char *str, int c);
 #endif
