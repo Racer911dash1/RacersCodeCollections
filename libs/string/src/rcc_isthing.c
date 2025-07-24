@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:01:49 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/24 17:25:56 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/24 17:27:07 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,8 +112,7 @@ bool rcc_ispunct(int c)
  * @brief Check if @p c is a whitespace.
  *
  * @param[in]	c	Character to check.
- *a space or a tab
-a space or a tab
+ *
  * @returns true if @p c is a whitespace, or false otherwise.
  */
 bool rcc_isspace(int c)
