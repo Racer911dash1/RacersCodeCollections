@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/24 16:43:38 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/24 22:33:14 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int32_t	rcc_atoi(const char *str)
 	int32_t	i = 0;
 	int8_t	sign = 1;
 
-	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+	while (rcc_isspace(str[i]))
 	{
 		i++;
 	}
@@ -39,7 +39,7 @@ int32_t	rcc_atoi(const char *str)
 		}
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (rcc_isdigit(str[i]))
 	{
 		number = number * 10 + str[i++] - '0';
 	}
@@ -61,7 +61,7 @@ int64_t	rcc_atol(const char *str)
 	int32_t	i = 0;
 	int8_t	sign = 1;
 
-	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+	while (rcc_isspace(str[i]))
 	{
 		i++;
 	}
@@ -73,7 +73,7 @@ int64_t	rcc_atol(const char *str)
 		}
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (rcc_isdigit(str[i]))
 	{
 		number = number * 10 + str[i++] - '0';
 	}
@@ -103,7 +103,7 @@ double	rcc_atod(const char *str)
 	int8_t	sign = 1;
 	bool	dot_found = false;
 
-	while (str[i] == ' ' || (str[i] >= '\t' && str[i] <= '\r'))
+	while (rcc_isspace(str[i]))
 	{
 		i++;
 	}
@@ -115,7 +115,7 @@ double	rcc_atod(const char *str)
 		}
 		i++;
 	}
-	while ((str[i] >= '0' && str[i] <= '9') || (str[i] == '.' && dot_found == false))
+	while (rcc_isdigit(str[i]) || (str[i] == '.' && dot_found == false))
 	{
 		if (str[i] == '.')
 		{
@@ -128,7 +128,7 @@ double	rcc_atod(const char *str)
 			number = number * 10 + str[i++] - '0';
 		}
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	while (rcc_isdigit(str[i]))
 	{
 		fraction = (str[i++] - '0') / fract_pos;
 		number = number + fraction;
