@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/24 23:56:12 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/25 17:27:19 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,20 +22,21 @@ int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
 // rcc_isthing.c
-bool rcc_isalnum(int c);
-bool rcc_isalpha(int c);
-bool rcc_iscntrl(int c);
-bool rcc_isdigit(int c);
-bool rcc_isgraph(int c);
-bool rcc_islower(int c);
-bool rcc_isprint(int c);
-bool rcc_ispunct(int c);
-bool rcc_isspace(int c);
-bool rcc_isupper(int c);
-bool rcc_isxdigit(int c);
-bool rcc_isascii(int c);
-bool rcc_isblank(int c);
+bool	rcc_isalnum(int c);
+bool	rcc_isalpha(int c);
+bool	rcc_iscntrl(int c);
+bool	rcc_isdigit(int c);
+bool	rcc_isgraph(int c);
+bool	rcc_islower(int c);
+bool	rcc_isprint(int c);
+bool	rcc_ispunct(int c);
+bool	rcc_isspace(int c);
+bool	rcc_isupper(int c);
+bool	rcc_isxdigit(int c);
+bool	rcc_isascii(int c);
+bool	rcc_isblank(int c);
 // rcc_strchr.c
 char	*rcc_strchr(const char *str, int c);
 char	*rcc_strchrnul(const char *str, int c);
+char	*rcc_strrchr(const char *str, int c);
 #endif
