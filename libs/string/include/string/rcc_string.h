@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 18:08:03 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/25 22:39:07 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,6 @@ char	*rcc_strrchr(const char *str, int c);
 // rcc_strcpy.c
 int32_t	rcc_strcmp(const char *str1, const char *str2);
 int32_t	rcc_strncmp(const char *str1, const char *str2, size_t bytes);
+// rcc_strlen.c
+size_t	rcc_strlen(const char *str);
 #endif

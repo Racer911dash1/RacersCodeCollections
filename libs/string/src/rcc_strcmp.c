@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcc_strcpy.c                                       :+:      :+:    :+:   */
+/*   rcc_strcmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 17:34:34 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 18:13:59 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/25 22:38:02 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,16 @@
 int32_t	rcc_strcmp(const char *str1, const char *str2)
 {
 	size_t			i = 0;
-	unsigned char	*str1cpy = (unsigned char *)str1;
-	unsigned char	*str2cpy = (unsigned char *)str2;
 
-	while (str1cpy[i] && str2cpy[i] && str1cpy[i] == str2cpy[i])
+	while (str1[i] == str2[i])
 	{
+		if (!str1[i] || !str2[i])
+		{
+			return (0);
+		}
 		i++;
 	}
-	return (str1cpy[i] - str2cpy[i]);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
 
 /**
@@ -49,16 +51,18 @@ int32_t	rcc_strcmp(const char *str1, const char *str2)
 int32_t	rcc_strncmp(const char *str1, const char *str2, size_t bytes)
 {
 	size_t			i = 0;
-	unsigned char	*str1cpy = (unsigned char *)str1;
-	unsigned char	*str2cpy = (unsigned char *)str2;
 
 	if (bytes == 0)
 	{
 		return (0);
 	}
-	while (str1cpy[i] && str2cpy[i] && str1cpy[i] == str2cpy[i] && i < bytes - 1)
+	while (str1[i] == str2[i] && i < bytes - 1)
 	{
+		if (!str1[i] || !str2[i])
+		{
+			return (0);
+		}
 		i++;
 	}
-	return (str1cpy[i] - str2cpy[i]);
+	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
 }
