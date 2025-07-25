@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 22:25:25 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 17:32:15 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/25 18:09:13 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
  */
 char	*rcc_strchr(const char *str, int c)
 {
-	int32_t	i = 0;
+	size_t	i = 0;
 	char	*cpystr = (char *)str;
 
 	while (cpystr[i] && cpystr[i] != c)
@@ -50,7 +50,7 @@ char	*rcc_strchr(const char *str, int c)
  */
 char	*rcc_strchrnul(const char *str, int c)
 {
-	int32_t	i = 0;
+	size_t	i = 0;
 	char	*cpystr = (char *)str;
 
 	while (cpystr[i] && cpystr[i] != c)
@@ -72,7 +72,7 @@ char	*rcc_strchrnul(const char *str, int c)
  */
 char	*rcc_strrchr(const char *str, int c)
 {
-	int32_t	i = 0;
+	size_t	i = 0;
 	char	*cpystr = (char *)str;
 	char	*last;
 

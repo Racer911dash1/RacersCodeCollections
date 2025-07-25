@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/24 22:33:14 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/25 18:10:07 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int32_t	rcc_atoi(const char *str)
 int64_t	rcc_atol(const char *str)
 {
 	int64_t	number = 0;
-	int32_t	i = 0;
+	size_t	i = 0;
 	int8_t	sign = 1;
 
 	while (rcc_isspace(str[i]))
@@ -99,7 +99,7 @@ double	rcc_atod(const char *str)
 	double	number = 0;
 	double	fraction = 0;
 	double	fract_pos = 10;
-	int32_t	i = 0;
+	size_t	i = 0;
 	int8_t	sign = 1;
 	bool	dot_found = false;
 
