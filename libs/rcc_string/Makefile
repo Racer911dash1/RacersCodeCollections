@@ -6,7 +6,7 @@
 #    By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 18:38:50 by dbakker           #+#    #+#              #
-#    Updated: 2025/07/23 22:39:30 by dbakker          ###   ########.fr        #
+#    Updated: 2025/07/26 20:45:48 by dbakker          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,6 @@ NAME = rcc_string.a
 
 SRCDIR	:= src
 OBJDIR	:= obj
-SRCEXT	:= c
-OBJEXT	:= o
 HEADERS	:= -I include
 
 CC		:= cc
@@ -24,7 +22,7 @@ CFLAGS	:= -Wall -Werror -Wextra
 SRCS	:= $(wildcard $(SRCDIR)/*.c)
 
 SRCPATH	:= $(addprefix $(SRCDIR)/,$(SRCS))
-OBJS	:= $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SRCS:.$(SRCEXT)=.$(OBJEXT)))
+OBJS	:= $(patsubst $(SRCDIR)/%,$(OBJDIR)/%,$(SRCS:.c=.o))
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	@mkdir -p $(dir $@)

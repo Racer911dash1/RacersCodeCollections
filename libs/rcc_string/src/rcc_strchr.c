@@ -6,11 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 22:25:25 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 18:09:13 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string/rcc_string.h"
+#include "rcc_string.h"
 
 /**
  * @brief Find the first occurrence of @p c in @p str.

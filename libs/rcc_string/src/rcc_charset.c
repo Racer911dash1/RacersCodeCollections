@@ -6,11 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 23:01:38 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 09:50:24 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string/rcc_string.h"
+#include "rcc_string.h"
 
 /**
  * @brief Write @p bytes amount of zeros pointed to by @p buffer.

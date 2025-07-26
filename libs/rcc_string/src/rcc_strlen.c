@@ -6,11 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 22:23:41 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 22:57:02 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string/rcc_string.h"
+#include "rcc_string.h"
 
 /**
  * @brief Calculate the length of @p str excluding the terminating null byte.

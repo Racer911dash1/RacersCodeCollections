@@ -6,11 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:47:47 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/23 22:54:28 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 21:31:09 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "math/rcc_math.h"
+#include "rcc_math.h"
 
 /**
  * @brief Raise the value of @p base to the power of @p pow.

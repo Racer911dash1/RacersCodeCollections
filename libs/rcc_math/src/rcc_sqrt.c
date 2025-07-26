@@ -6,12 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 21:18:11 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 18:13:03 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 21:12:42 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "math/rcc_math.h"
-#include <stdio.h>
+#include "rcc_math.h"
 
 /**
  * @brief Return the square root of @p num.

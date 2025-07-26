@@ -6,11 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 09:56:30 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "string/rcc_string.h"
+#include "rcc_string.h"
 
 /**
  * @brief Convert @p str to an int.

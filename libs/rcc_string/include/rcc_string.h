@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 09:40:47 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 10:04:13 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,15 @@
 # include <stddef.h>
 
 // rcc_atonum.c
+
 int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
 // rcc_charset.c
+
 void	*rcc_bzero(void *buffer, size_t bytes);
 // rcc_isthing.c
+
 bool	rcc_isalnum(int c);
 bool	rcc_isalpha(int c);
 bool	rcc_iscntrl(int c);
@@ -38,13 +41,16 @@ bool	rcc_isxdigit(int c);
 bool	rcc_isascii(int c);
 bool	rcc_isblank(int c);
 // rcc_strchr.c
+
 char	*rcc_strchr(const char *str, int c);
 char	*rcc_strchrnul(const char *str, int c);
 char	*rcc_strrchr(const char *str, int c);
 // rcc_strcpy.c
+
 int32_t	rcc_strcmp(const char *str1, const char *str2);
 int32_t	rcc_strncmp(const char *str1, const char *str2, size_t bytes);
 // rcc_strlen.c
+
 size_t	rcc_strlen(const char *str);
 size_t	rcc_strnlen(const char *str, size_t maxlen);
 #endif
