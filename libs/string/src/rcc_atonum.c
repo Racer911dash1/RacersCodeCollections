@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 18:10:07 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 09:56:30 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,8 +80,6 @@ int64_t	rcc_atol(const char *str)
 	return (number * sign);
 }
 
-#include <stdio.h>
-
 /**
  * @brief Convert @p str to a double.
  *
@@ -101,7 +99,6 @@ double	rcc_atod(const char *str)
 	double	fract_pos = 10;
 	size_t	i = 0;
 	int8_t	sign = 1;
-	bool	dot_found = false;
 
 	while (rcc_isspace(str[i]))
 	{
@@ -115,18 +112,13 @@ double	rcc_atod(const char *str)
 		}
 		i++;
 	}
-	while (rcc_isdigit(str[i]) || (str[i] == '.' && dot_found == false))
+	while (rcc_isdigit(str[i]))
 	{
-		if (str[i] == '.')
-		{
-			dot_found = true;
-			i++;
-			break ;
-		}
-		else
-		{
-			number = number * 10 + str[i++] - '0';
-		}
+		number = number * 10 + str[i++] - '0';
+	}
+	if (str[i++] != '.')
+	{
+		return (number * sign);
 	}
 	while (rcc_isdigit(str[i]))
 	{
