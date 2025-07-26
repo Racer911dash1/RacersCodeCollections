@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/25 23:00:24 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/26 09:40:47 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
 int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
+// rcc_charset.c
+void	*rcc_bzero(void *buffer, size_t bytes);
 // rcc_isthing.c
 bool	rcc_isalnum(int c);
 bool	rcc_isalpha(int c);
