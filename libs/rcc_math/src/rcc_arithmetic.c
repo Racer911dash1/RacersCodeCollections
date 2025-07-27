@@ -6,12 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:55:52 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 12:16:39 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:19:01 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_math.h"
-#include <stdio.h>
 
 /**
  * @brief Compute the remainder of dividing @p a by @p b.
