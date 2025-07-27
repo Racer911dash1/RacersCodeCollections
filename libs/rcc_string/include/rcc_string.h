@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 10:04:13 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 18:54:24 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,11 @@
 # include <stdint.h>
 # include <stdbool.h>
 # include <stddef.h>
+# include <stdlib.h>
 
+// rcc_alloc.c
+
+void	*rcc_calloc(size_t nmemb, size_t size);
 // rcc_atonum.c
 
 int32_t	rcc_atoi(const char *str);
@@ -25,6 +29,7 @@ double	rcc_atod(const char *str);
 // rcc_charset.c
 
 void	*rcc_bzero(void *buffer, size_t bytes);
+void	*rcc_memset(void *buffer, int c, size_t bytes);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);
