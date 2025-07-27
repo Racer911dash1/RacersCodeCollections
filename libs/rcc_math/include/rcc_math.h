@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:46:56 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 22:11:21 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 11:27:55 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define RCC_MATH_H
 
 # include <stdint.h>
+# include <stdarg.h>
+# include <stddef.h>
 
 // rcc_arithmetic.
 
@@ -28,4 +30,11 @@ int32_t	rcc_powi(int32_t base, int32_t pow);
 // rcc_sqrt.c
 
 int32_t	rcc_sqrti(int32_t num);
+// rcc_variadic_arithmetic
+
+int32_t	rcc_vmodulo(size_t nums, ...);
+int32_t	rcc_vaddi(size_t nums, ...);
+int32_t	rcc_vsubtracti(size_t nums, ...);
+int32_t	rcc_vmultiplyi(size_t nums, ...);
+int32_t	rcc_vdividei(size_t nums, ...);
 #endif
