@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 23:01:38 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param[in,out]	buffer	Pointed area to fill.
  * @param[in]		bytes	Amount of zeros to write.
  *
- * @returns Pointer to the zerod memory area.
+ * @return Pointer to the zerod memory area.
  */
 void	*rcc_bzero(void *buffer, size_t bytes)
 {
@@ -36,7 +36,7 @@ void	*rcc_bzero(void *buffer, size_t bytes)
  * @param[in]		c		Character to fill @p buffer with.
  * @param[in]		bytes	Amount of @p c to write.
  *
- * @returns Pointer to the memory area filled with @p c characters.
+ * @return Pointer to the memory area filled with @p c characters.
  */
 void	*rcc_memset(void *buffer, int c, size_t bytes)
 {

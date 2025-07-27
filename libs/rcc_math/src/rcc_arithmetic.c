@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:55:52 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 22:49:39 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:16:39 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,14 @@
 #include <stdio.h>
 
 /**
- * @brief Get the remaining of dividing @p a by @p b.
+ * @brief Compute the remainder of dividing @p a by @p b.
  *
  * @param[in]	a	Number to divide.
  * @param[in]	b	The Divisor.
  *
- * @returns	The remainder of @p a and @p b, or 0 on error.
+ * @return The remainder of @p a and @p b, or 0 on error.
+ *
+ * @note No overflow checks are performed. Returns 0 if division by zero is performed.
  */
 int32_t	rcc_modulo(int32_t a, int32_t b)
 {
@@ -31,14 +33,14 @@ int32_t	rcc_modulo(int32_t a, int32_t b)
 }
 
 /**
- * @brief Add @p a and @p b together.
+ * @brief Compute the sum of @p a and @p b.
  *
  * @param[in]	a	Number to add.
- * @param[in]	b	Add to @p a.
+ * @param[in]	b	The addend.
  *
- * @returns	The sum of @p a and @p b.
+ * @return The sum of @p a and @p b.
  *
- * @note There is no error handling for overflow.
+ * @note No overflow checks are performed.
  */
 int32_t	rcc_addi(int32_t a, int32_t b)
 {
@@ -46,14 +48,14 @@ int32_t	rcc_addi(int32_t a, int32_t b)
 }
 
 /**
- * @brief Subtract @p a by @p b.
+ * @brief Compute the difference of @p a and @p b.
  *
  * @param[in]	a	Number to subtract.
- * @param[in]	b	Subtract from @p a.
+ * @param[in]	b	The subtrahend.
  *
- * @returns	The difference of @p a and @p b.
+ * @return The difference of @p a and @p b.
  *
- * @note There is no error handling for overflow.
+ * @note No overflow checks are performed.
  */
 int32_t	rcc_subtracti(int32_t a, int32_t b)
 {
@@ -61,14 +63,14 @@ int32_t	rcc_subtracti(int32_t a, int32_t b)
 }
 
 /**
- * @brief Multiply @p a by @p b.
+ * @brief Compute the product of @p a and @p b.
  *
  * @param[in]	a	Number to multiply.
- * @param[in]	b	Multiply to @p a.
+ * @param[in]	b	The multiplicand.
  *
- * @returns	The product of multiplying @p a, @p b times.
+ * @return The product of multiplying @p a, @p b times.
  *
- * @note There is no error handling for overflow.
+ * @note No overflow checks are performed.
  */
 int32_t	rcc_multiplyi(int32_t a, int32_t b)
 {
@@ -76,14 +78,16 @@ int32_t	rcc_multiplyi(int32_t a, int32_t b)
 }
 
 /**
- * @brief Divide @p a by @p b.
+ * @brief Compute the quotient of @p a and @p b.
+ *
+ * If the quotient is not a whole number, it will floor the return value.
  *
  * @param[in]	a	Number to divide.
  * @param[in]	b	The divisor.
  *
- * @returns	The quotient of dividing @p a by @p b, or 0 on error.
+ * @return The quotient of dividing @p a by @p b, or 0 on error.
  *
- * @note If the quotient is not a whole number, it will floor the return value.
+ * @note No overflow checks are performed. Returns 0 if division by zero is performed.
  */
 int32_t	rcc_dividei(int32_t a, int32_t b)
 {

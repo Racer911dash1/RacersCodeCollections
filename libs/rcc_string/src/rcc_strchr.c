@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 22:25:25 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * @param[in]	str	String to iterate through.
  * @param[in]	c	Character to find in @p str.
  *
- * @returns Pointer to the first occurrence of str, or NULL on failure.
+ * @return Pointer to the first occurrence of str, or NULL on failure.
  */
 char	*rcc_strchr(const char *str, int c)
 {
@@ -46,7 +46,7 @@ char	*rcc_strchr(const char *str, int c)
  * @param[in]	str	String to iterate through.
  * @param[in]	c	Character to find in @p str.
  *
- * @returns Pointer to the first occurrence of str, or pointer to the null byte.
+ * @return Pointer to the first occurrence of str, or pointer to the null byte.
  */
 char	*rcc_strchrnul(const char *str, int c)
 {
@@ -68,7 +68,7 @@ char	*rcc_strchrnul(const char *str, int c)
  * @param[in]	str	String to iterate through.
  * @param[in]	c	Character to find in @p str.
  *
- * @returns Pointer to the last occurrence of str, or NULL on failure.
+ * @return Pointer to the last occurrence of str, or NULL on failure.
  */
 char	*rcc_strrchr(const char *str, int c)
 {

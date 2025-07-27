@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:01:49 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is alphanumeric, or false otherwise.
+ * @return true if @p c is alphanumeric, or false otherwise.
  */
 bool rcc_isalnum(int c)
 {
@@ -29,7 +29,7 @@ bool rcc_isalnum(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is alphabetic, or false otherwise.
+ * @return true if @p c is alphabetic, or false otherwise.
  */
 bool rcc_isalpha(int c)
 {
@@ -41,7 +41,7 @@ bool rcc_isalpha(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a control character, or false otherwise.
+ * @return true if @p c is a control character, or false otherwise.
  */
 bool rcc_iscntrl(int c)
 {
@@ -53,7 +53,7 @@ bool rcc_iscntrl(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a digit, or false otherwise.
+ * @return true if @p c is a digit, or false otherwise.
  */
 bool rcc_isdigit(int c)
 {
@@ -65,7 +65,7 @@ bool rcc_isdigit(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a non-space printable character, or false otherwise.
+ * @return true if @p c is a non-space printable character, or false otherwise.
  */
 bool rcc_isgraph(int c)
 {
@@ -77,7 +77,7 @@ bool rcc_isgraph(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is lowercase, or false otherwise.
+ * @return true if @p c is lowercase, or false otherwise.
  */
 bool rcc_islower(int c)
 {
@@ -89,7 +89,7 @@ bool rcc_islower(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a printable character, or false otherwise.
+ * @return true if @p c is a printable character, or false otherwise.
  */
 bool rcc_isprint(int c)
 {
@@ -101,7 +101,7 @@ bool rcc_isprint(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is not an alphanumeric or space character, or false otherwise.
+ * @return true if @p c is not an alphanumeric or space character, or false otherwise.
  */
 bool rcc_ispunct(int c)
 {
@@ -113,7 +113,7 @@ bool rcc_ispunct(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a whitespace, or false otherwise.
+ * @return true if @p c is a whitespace, or false otherwise.
  */
 bool rcc_isspace(int c)
 {
@@ -125,7 +125,7 @@ bool rcc_isspace(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is uppercase, or false otherwise.
+ * @return true if @p c is uppercase, or false otherwise.
  */
 bool rcc_isupper(int c)
 {
@@ -137,7 +137,7 @@ bool rcc_isupper(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a hexadecimal digit, or false otherwise.
+ * @return true if @p c is a hexadecimal digit, or false otherwise.
  */
 bool rcc_isxdigit(int c)
 {
@@ -151,7 +151,7 @@ bool rcc_isxdigit(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is an ascii character, or false otherwise.
+ * @return true if @p c is an ascii character, or false otherwise.
  */
 bool rcc_isascii(int c)
 {
@@ -163,7 +163,7 @@ bool rcc_isascii(int c)
  *
  * @param[in]	c	Character to check.
  *
- * @returns true if @p c is a space or a tab, or false otherwise.
+ * @return true if @p c is a space or a tab, or false otherwise.
  */
 bool rcc_isblank(int c)
 {

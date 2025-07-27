@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 22:23:41 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  *
  * @param[in]	str	The string to get the length of.
  *
- * @returns The length of @p str.
+ * @return The length of @p str.
  */
 size_t	rcc_strlen(const char *str)
 {
@@ -37,7 +37,7 @@ size_t	rcc_strlen(const char *str)
  * @param[in]	str		The string to get the length of.
  * @param[in]	bytes	The maximum length to return.
  *
- * @returns The length of @p if less than @p maxlen, or maxlen.
+ * @return The length of @p if less than @p maxlen, or maxlen.
  */
 size_t	rcc_strnlen(const char *str, size_t maxlen)
 {

@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:56:44 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 20:47:48 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  *
  * @param[in]	str	The String to convert.
  *
- * @returns The converted value, or 0 on error.
+ * @return The converted value, or 0 on error.
  *
  * @note	rcc_atoi does not detect valid input or overflow.
  */
@@ -51,7 +51,7 @@ int32_t	rcc_atoi(const char *str)
  *
  * @param[in]	str	The String to convert.
  *
- * @returns The converted value, or 0 on error.
+ * @return The converted value, or 0 on error.
  *
  * @note	rcc_atol does not detect valid input or overflow.
  */
@@ -88,7 +88,7 @@ int64_t	rcc_atol(const char *str)
  *
  * @param[in]	str	The String to convert.
  *
- * @returns The converted value, or 0 on error.
+ * @return The converted value, or 0 on error.
  *
  * @note	rcc_atod does not detect valid input or overflow.
  */

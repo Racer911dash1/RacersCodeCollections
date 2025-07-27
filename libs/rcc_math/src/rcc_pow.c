@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:47:47 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/26 21:31:09 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:13:10 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param[in]	base	The base value to be exponentiated.
  * @param[in]	pow		The exponent to raise the base to.
  *
- * @returns	The value of @p base raised to the power of @p y, or 0 on error.
+ * @return The value of @p base raised to the power of @p y, or 0 on error.
  */
 int32_t	rcc_powi(int32_t base, int32_t pow)
 {

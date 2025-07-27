@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 23:21:23 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 12:02:43 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/27 12:09:57 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param[in]	nums	Amount of int32_t values to process.
  * @param[in]	...		A varadic list of int32_t values.
  *
- * @returns The computed remainder, or 0 on error.
+ * @return The computed remainder, or 0 on error.
  *
  * @warning	All variadic arguments must be of type int32_t. Behaviour is otherwise
  * 			undefined.
@@ -56,7 +56,7 @@ int32_t	rcc_vmodulo(size_t nums, ...)
  * @param[in]	nums	Amount of int32_t values to process.
  * @param[in]	...		A varadic list of int32_t values.
  *
- * @returns The computed sum, or 0 on error.
+ * @return The computed sum, or 0 on error.
  *
  * @warning	All variadic arguments must be of type int32_t. Behaviour is otherwise
  * 			undefined.
@@ -83,7 +83,7 @@ int32_t	rcc_vaddi(size_t nums, ...)
  * @param[in]	nums	Amount of int32_t values to process.
  * @param[in]	...		A varadic list of int32_t values.
  *
- * @returns The computed difference, or 0 on error.
+ * @return The computed difference, or 0 on error.
  *
  * @warning	All variadic arguments must be of type int32_t. Behaviour is otherwise
  * 			undefined.
@@ -114,7 +114,7 @@ int32_t	rcc_vsubtracti(size_t nums, ...)
  * @param[in]	nums	Amount of int32_t values to process.
  * @param[in]	...		A varadic list of int32_t values.
  *
- * @returns The computed product, or 0 on error.
+ * @return The computed product, or 0 on error.
  *
  * @warning	All variadic arguments must be of type int32_t. Behaviour is otherwise
  * 			undefined.
@@ -141,7 +141,7 @@ int32_t	rcc_vmultiplyi(size_t nums, ...)
  * @param[in]	nums	Amount of int32_t values to process.
  * @param[in]	...		A varadic list of int32_t values.
  *
- * @returns The computed quotient, or 0 on error.
+ * @return The computed quotient, or 0 on error.
  *
  * @warning	All variadic arguments must be of type int32_t. Behaviour is otherwise
  * 			undefined.
