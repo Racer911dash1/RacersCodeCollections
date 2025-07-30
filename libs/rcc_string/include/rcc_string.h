@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 18:54:24 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/07/28 23:27:40 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,13 @@ void	*rcc_calloc(size_t nmemb, size_t size);
 int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
-// rcc_charset.c
+// rcc_memory.c
 
 void	*rcc_bzero(void *buffer, size_t bytes);
 void	*rcc_memset(void *buffer, int c, size_t bytes);
+void	*rcc_memcpy(void *dest, const void *srcs, size_t bytes);
+void	*rcc_memmove(void *dest, const void *src, size_t bytes);
+int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t bytes);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);
