@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 22:23:41 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/01 23:24:09 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	rcc_strlen(const char *str)
  * 			terminating null byte.
  *
  * @param[in]	str		The string to get the length of.
- * @param[in]	bytes	The maximum length to return.
+ * @param[in]	maxlen	The maximum length to return.
  *
  * @return The length of @p if less than @p maxlen, or maxlen.
  */
