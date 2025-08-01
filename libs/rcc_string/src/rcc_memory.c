@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 23:01:38 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/30 15:05:08 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/01 23:28:41 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,27 @@ void	*rcc_memcpy(void *dest, const void *src, size_t num)
 		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
 	}
 	return (dest);
+}
+
+/**
+ * @brief Copy @p num bytes pointed from @p src to @p dest.
+ *
+ * @param[in,out]	dest	Pointer to the destination memory area.
+ * @param[in]		src		Pointer to the source memory area.
+ * @param[in]		num		Amount of bytes to copy from @p src.
+ *
+ * @return Pointer after the last written byte to @p dest.
+ */
+void	*rcc_mempcpy(void *dest, const void *src, size_t num)
+{
+	size_t	i = 0;
+
+	while (i < num)
+	{
+		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
+		i++;
+	}
+	return (dest + i);
 }
 
 /**

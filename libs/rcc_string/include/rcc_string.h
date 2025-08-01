@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/28 23:27:40 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/01 23:45:54 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,12 @@ int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
 // rcc_memory.c
 
-void	*rcc_bzero(void *buffer, size_t bytes);
-void	*rcc_memset(void *buffer, int c, size_t bytes);
-void	*rcc_memcpy(void *dest, const void *srcs, size_t bytes);
-void	*rcc_memmove(void *dest, const void *src, size_t bytes);
-int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t bytes);
+void	*rcc_bzero(void *buffer, size_t num);
+void	*rcc_memset(void *buffer, int c, size_t num);
+void	*rcc_memcpy(void *dest, const void *srcs, size_t num);
+void	*rcc_mempcpy(void *dest, const void *src, size_t num);
+void	*rcc_memmove(void *dest, const void *src, size_t num);
+int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);
@@ -53,10 +54,15 @@ bool	rcc_isblank(int c);
 char	*rcc_strchr(const char *str, int c);
 char	*rcc_strchrnul(const char *str, int c);
 char	*rcc_strrchr(const char *str, int c);
-// rcc_strcpy.c
+// rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
-int32_t	rcc_strncmp(const char *str1, const char *str2, size_t bytes);
+int32_t	rcc_strncmp(const char *str1, const char *str2, size_t num);
+// rcc_strcpy.c
+
+char	*rcc_stpcpy(char *dest, const char *src);
+char	*rcc_strcpy(char *dest, const char *src);
+char	*rcc_strcat(char *dest, const char *src);
 // rcc_strlen.c
 
 size_t	rcc_strlen(const char *str);
