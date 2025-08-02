@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rcc_strchr.c                                       :+:      :+:    :+:   */
+/*   rcc_strfind.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 22:25:25 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 12:08:16 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/03 01:25:27 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,83 @@ char	*rcc_strrchr(const char *str, int c)
 	if (*last == c)
 	{
 		return (last);
+	}
+	return (NULL);
+}
+
+#include <stdio.h>
+
+/**
+ * @brief Find @p little in @p big.
+ *
+ * @param[in]	big		String to search through.
+ * @param[in]	little	String to find.
+ *
+ * @retval Pointer to @p big if @p little is an empty string.
+ * @retval NULL if @p little is not found in @p big.
+ * @retval Pointer to the first character on the first occurrence of @p little found in @p big.
+ */
+char	*rcc_strstr(const char *big, const char *little)
+{
+	size_t	i = 0;
+	size_t	j = 0;
+
+	if (little[i] == '\0')
+	{
+		return ((char *)big);
+	}
+	while (big[i])
+	{
+		while (big[i] && big[i + j] == little[j])
+		{
+			j++;
+		}
+		if (little[j] == '\0')
+		{
+			return ((char *)&big[i]);
+		}
+		j = 0;
+		i++;
+	}
+	return (NULL);
+}
+
+/**
+ * @brief Find @p little in @p big for the first @p num bytes.
+ *
+ * @param[in]	big		String to search through.
+ * @param[in]	little	String to find.
+ * @param[in]	num		Amount of characters to search.
+ *
+ * @retval Pointer to @p big if @p little is an empty string.
+ * @retval NULL if @p little is not found in @p big.
+ * @retval Pointer to the first character on the first occurrence of @p little found in @p big.
+ */
+char	*rcc_strnstr(const char *big, const char *little, size_t num)
+{
+	size_t	i = 0;
+	size_t	j = 0;
+
+	if (little[i] == '\0')
+	{
+		return ((char *)big);
+	}
+	if (rcc_strlen(little) > num)
+	{
+		return (NULL);
+	}
+	while (i < num && big[i])
+	{
+		while (little[j] && big[i + j] == little[j] && i + j < num)
+		{
+			j++;
+		}
+		if (little[j] == '\0')
+		{
+			return ((char *)&big[i]);
+		}
+		j = 0;
+		i++;
 	}
 	return (NULL);
 }

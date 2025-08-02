@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/02 21:07:18 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/03 01:15:42 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,13 @@ bool	rcc_isupper(int c);
 bool	rcc_isxdigit(int c);
 bool	rcc_isascii(int c);
 bool	rcc_isblank(int c);
-// rcc_strchr.c
+// rcc_strfind.c
 
 char	*rcc_strchr(const char *str, int c);
 char	*rcc_strchrnul(const char *str, int c);
 char	*rcc_strrchr(const char *str, int c);
+char	*rcc_strstr(const char *big, const char *little);
+char	*rcc_strnstr(const char *big, const char *little, size_t num);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
