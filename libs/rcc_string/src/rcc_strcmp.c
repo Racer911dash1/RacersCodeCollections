@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 17:34:34 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/01 23:24:43 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/02 18:01:36 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int32_t	rcc_strcmp(const char *str1, const char *str2)
  *
  * @param[in]	str1	First string.
  * @param[in]	str2	Second string.
- * @param[in]	num	Amount of bytes to compare.
+ * @param[in]	num		Amount of bytes to compare.
  *
  * @retval 0 if @p str1 and @p str2 are equal.
  * @retval A negative value if @p str1 is less than @p str2.

@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/01 23:45:54 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/02 18:05:54 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,10 @@ int32_t	rcc_strncmp(const char *str1, const char *str2, size_t num);
 char	*rcc_stpcpy(char *dest, const char *src);
 char	*rcc_strcpy(char *dest, const char *src);
 char	*rcc_strcat(char *dest, const char *src);
+// rcc_strdup.c
+
+char	*rcc_strdup(const char *str);
+char	*rcc_strndup(const char *str, size_t num);
 // rcc_strlen.c
 
 size_t	rcc_strlen(const char *str);

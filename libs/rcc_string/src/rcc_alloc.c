@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 18:46:35 by dbakker           #+#    #+#             */
-/*   Updated: 2025/07/27 19:16:08 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/02 18:00:39 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param[in]	nmemb	Number of members.
  * @param[in]	size	Size of each member
  *
- * @return Pointer to the allocated memory.
+ * @return Pointer to the allocated memory, or NULL on failure.
  *
  * @warning Caller owns free().
  */

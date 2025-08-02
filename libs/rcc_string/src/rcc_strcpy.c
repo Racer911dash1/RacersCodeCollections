@@ -6,14 +6,14 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 19:19:15 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/02 00:01:51 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/02 17:53:33 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
 
 /**
- * @brief Copy the pointer of @p src to @p dest and null terminate it
+ * @brief Copy the pointer of @p src to @p dest and null terminate it.
  *
  * @param[in,out]	dest	Pointer to the destination memory area.
  * @param[in]		src		Pointer to the source memory area.
@@ -31,14 +31,14 @@ char	*rcc_stpcpy(char *dest, const char *src)
 }
 
 /**
- * @brief Copy the pointer of @p src to @p dest and null terminate it
+ * @brief Copy the pointer of @p src to @p dest and null terminate it.
  *
  * @param[in,out]	dest	Pointer to the destination memory area.
  * @param[in]		src		Pointer to the source memory area.
  *
  * @return Pointer to @p dest.
  *
- * @note Caller is responsible to allocate a buffer large enough for @p dest.\
+ * @note Caller is responsible to allocate a buffer large enough for @p dest.
  * @note At minimum being rcc_strlen(src) + 1.
  */
 char	*rcc_strcpy(char *dest, const char *src)
