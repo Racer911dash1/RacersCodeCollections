@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/02 18:05:54 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/02 21:07:18 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,4 +71,8 @@ char	*rcc_strndup(const char *str, size_t num);
 
 size_t	rcc_strlen(const char *str);
 size_t	rcc_strnlen(const char *str, size_t maxlen);
+// rcc_tocase.c
+
+int32_t	rcc_tolower(int32_t c);
+int32_t	rcc_toupper(int32_t c);
 #endif
