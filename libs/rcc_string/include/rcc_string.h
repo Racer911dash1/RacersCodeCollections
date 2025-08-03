@@ -6,7 +6,7 @@
 /* Created:		2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 16:40:38                                           */
+/* Modified:	2025/08/03 22:32:06                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,8 +58,11 @@ int32_t	rcc_strncasecmp(const char *str1, const char *str2, size_t num);
 // rcc_strcpy.c
 
 char	*rcc_stpcpy(char *dest, const char *src);
+char	*rcc_stpncpy(char *dest, const char *src, size_t num);
 char	*rcc_strcpy(char *dest, const char *src);
+char	*rcc_strncpy(char *dest, const char *src, size_t num);
 char	*rcc_strcat(char *dest, const char *src);
+char	*rcc_strncat(char *dest, const char *src, size_t num);
 // rcc_strdup.c
 
 char	*rcc_strdup(const char *str);
