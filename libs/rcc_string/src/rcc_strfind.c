@@ -6,7 +6,7 @@
 /* Created:		2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 14:56:54                                           */
+/* Modified:	2025/08/03 16:37:09                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -212,7 +212,7 @@ char	*rcc_strnstr(const char *big, const char *little, size_t num)
  * @retval NULL if @p little is not found in @p big.
  * @retval Pointer to the first character on the first occurrence of @p little found in @p big.
  */
-char	*rcc_strcasenstr(const char *big, const char *little, size_t num)
+char	*rcc_strcnasestr(const char *big, const char *little, size_t num)
 {
 	size_t	i = 0;
 	size_t	j = 0;

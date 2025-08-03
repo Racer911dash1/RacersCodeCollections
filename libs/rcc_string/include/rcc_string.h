@@ -6,7 +6,7 @@
 /* Created:		2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 14:58:01                                           */
+/* Modified:	2025/08/03 16:40:38                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,9 @@ int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
+int32_t	rcc_strcasecmp(const char *str1, const char *str2);
 int32_t	rcc_strncmp(const char *str1, const char *str2, size_t num);
+int32_t	rcc_strncasecmp(const char *str1, const char *str2, size_t num);
 // rcc_strcpy.c
 
 char	*rcc_stpcpy(char *dest, const char *src);
@@ -70,7 +72,7 @@ char	*rcc_strrchr(const char *str, int c);
 char	*rcc_strstr(const char *big, const char *little);
 char	*rcc_strcasestr(const char *big, const char *little);
 char	*rcc_strnstr(const char *big, const char *little, size_t num);
-char	*rcc_strcasenstr(const char *big, const char *little, size_t num);
+char	*rcc_strcnasestr(const char *big, const char *little, size_t num);
 // rcc_strlen.c
 
 size_t	rcc_strlen(const char *str);
