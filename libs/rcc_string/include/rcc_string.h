@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 18:57:10 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/03 11:11:01 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/03 11:31:44 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,11 @@
 // rcc_alloc.c
 
 void	*rcc_calloc(size_t nmemb, size_t size);
-// rcc_atonum.c
+// rcc_atotype.c
 
 int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
-// rcc_memory.c
-
-void	*rcc_bzero(void *buffer, size_t num);
-void	*rcc_memset(void *buffer, int c, size_t num);
-void	*rcc_memcpy(void *dest, const void *srcs, size_t num);
-void	*rcc_mempcpy(void *dest, const void *src, size_t num);
-void	*rcc_memmove(void *dest, const void *src, size_t num);
-int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);
@@ -49,15 +41,14 @@ bool	rcc_isupper(int c);
 bool	rcc_isxdigit(int c);
 bool	rcc_isascii(int c);
 bool	rcc_isblank(int c);
-// rcc_strfind.c
+// rcc_memory.c
 
-char	*rcc_strchr(const char *str, int c);
-char	*rcc_strchrnul(const char *str, int c);
-char	*rcc_strrchr(const char *str, int c);
-char	*rcc_strstr(const char *big, const char *little);
-char	*rcc_strcasestr(const char *big, const char *little);
-char	*rcc_strnstr(const char *big, const char *little, size_t num);
-char	*rcc_strcasenstr(const char *big, const char *little, size_t num);
+void	*rcc_bzero(void *buffer, size_t num);
+void	*rcc_memset(void *buffer, int c, size_t num);
+void	*rcc_memcpy(void *dest, const void *srcs, size_t num);
+void	*rcc_mempcpy(void *dest, const void *src, size_t num);
+void	*rcc_memmove(void *dest, const void *src, size_t num);
+int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
@@ -71,6 +62,15 @@ char	*rcc_strcat(char *dest, const char *src);
 
 char	*rcc_strdup(const char *str);
 char	*rcc_strndup(const char *str, size_t num);
+// rcc_strfind.c
+
+char	*rcc_strchr(const char *str, int c);
+char	*rcc_strchrnul(const char *str, int c);
+char	*rcc_strrchr(const char *str, int c);
+char	*rcc_strstr(const char *big, const char *little);
+char	*rcc_strcasestr(const char *big, const char *little);
+char	*rcc_strnstr(const char *big, const char *little, size_t num);
+char	*rcc_strcasenstr(const char *big, const char *little, size_t num);
 // rcc_strlen.c
 
 size_t	rcc_strlen(const char *str);
