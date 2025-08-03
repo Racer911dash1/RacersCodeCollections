@@ -6,7 +6,7 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 22:25:25 by dbakker           #+#    #+#             */
-/*   Updated: 2025/08/03 01:25:27 by dbakker          ###   ########.fr       */
+/*   Updated: 2025/08/03 10:35:26 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,6 @@ char	*rcc_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
-#include <stdio.h>
 
 /**
  * @brief Find @p little in @p big.
