@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:		rcc_strdup.c                                                  */
+/* File:        rcc_strdup.c                                                  */
 /*                                                                            */
-/* Author:		Racer911-1                                                    */
-/* Created:		2025/07/27 18:45:05                                           */
+/* Author:      Racer911-1                                                    */
+/* Created:     2025/07/27 18:45:05                                           */
 /*                                                                            */
-/* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 14:57:01                                           */
+/* Modified by: Racer911-1                                                    */
+/* Modified:    2025/08/14 23:02:01                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
 
 /**
- * @brief Duplicate @p str to a new pointer memory.
+ * @brief Duplicate @p str to a new memory pointer.
  *
  * @param[in]	str	String to duplicate.
  *
@@ -33,7 +33,7 @@ char	*rcc_strdup(const char *str)
 }
 
 /**
- * @brief Duplicate @p num bytes from @p str to a new pointer memory.
+ * @brief Duplicate @p num bytes from @p str to a new memory pointer.
  *
  * @param[in]	str	String to duplicate.
  *

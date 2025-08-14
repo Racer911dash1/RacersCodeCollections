@@ -1,24 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:		rcc_strfind.c                                                 */
+/* File:        rcc_strfind.c                                                 */
 /*                                                                            */
-/* Author:		Racer911-1                                                    */
-/* Created:		2025/07/25 22:13:20                                           */
+/* Author:      Racer911-1                                                    */
+/* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
-/* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 16:37:09                                           */
+/* Modified by: Racer911-1                                                    */
+/* Modified:    2025/08/14 23:01:57                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
 
 /**
- * @brief Find the first occurrence of @p c in @p str.
+ * @brief Find the first occurrence of @p c in @p str, including the null terminator.
  *
- * This includes the Null terminator.
- *
- * @param[in]	str	String to iterate through.
- * @param[in]	c	Character to find in @p str.
+ * @param[in]	str	String to search through.
+ * @param[in]	c	Character to find.
  *
  * @return Pointer to the first occurrence of str, or NULL on failure.
  */
@@ -39,12 +37,10 @@ char	*rcc_strchr(const char *str, int c)
 }
 
 /**
- * @brief Find the first occurrence of @p c in @p str.
+ * @brief Find the first occurrence of @p c in @p str, including the null terminator.
  *
- * This includes the Null terminator.
- *
- * @param[in]	str	String to iterate through.
- * @param[in]	c	Character to find in @p str.
+ * @param[in]	str	String to search through.
+ * @param[in]	c	Character to find.
  *
  * @return Pointer to the first occurrence of str, or pointer to the null byte.
  */
@@ -61,12 +57,10 @@ char	*rcc_strchrnul(const char *str, int c)
 }
 
 /**
- * @brief Find the last occurrence of @p c in @p str.
+ * @brief Find the last occurrence of @p c in @p str, including the null terminator.
  *
- * This includes the Null terminator.
- *
- * @param[in]	str	String to iterate through.
- * @param[in]	c	Character to find in @p str.
+ * @param[in]	str	String to search through.
+ * @param[in]	c	Character to find.
  *
  * @return Pointer to the last occurrence of str, or NULL on failure.
  */

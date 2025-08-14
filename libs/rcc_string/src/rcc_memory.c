@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:		rcc_memory.c                                                  */
+/* File:        rcc_memory.c                                                  */
 /*                                                                            */
-/* Author:		Racer911-1                                                    */
-/* Created:		2025/07/25 23:01:37                                           */
+/* Author:      Racer911-1                                                    */
+/* Created:     2025/07/25 23:01:37                                           */
 /*                                                                            */
-/* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 14:57:34                                           */
+/* Modified by: Racer911-1                                                    */
+/* Modified:    2025/08/14 23:01:57                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param[in,out]	buffer	Pointed area to fill.
  * @param[in]		num		Amount of zeros to write.
  *
- * @return Pointer to the zerod memory area.
+ * @return Pointer to the zerod buffer.
  */
 void	*rcc_bzero(void *buffer, size_t num)
 {
@@ -36,7 +36,7 @@ void	*rcc_bzero(void *buffer, size_t num)
  * @param[in]		c		Character to fill @p buffer with.
  * @param[in]		num		Amount of @p c to write.
  *
- * @return Pointer to the memory area filled with @p c characters.
+ * @return Pointer to the buffer filled with @p c characters.
  */
 void	*rcc_memset(void *buffer, int c, size_t num)
 {
@@ -50,13 +50,13 @@ void	*rcc_memset(void *buffer, int c, size_t num)
 /**
  * @brief Copy @p num bytes pointed from @p src to @p dest.
  *
- * @param[in,out]	dest	Pointer to the destination memory area.
- * @param[in]		src		Pointer to the source memory area.
+ * @param[in,out]	dest	Pointer to the destination buffer.
+ * @param[in]		src		Pointer to the source buffer.
  * @param[in]		num		Amount of bytes to copy from @p src.
  *
  * @return Pointer to @p dest.
  *
- * @note Behaviour is undefined if the copying happens between memory areas that overlap.
+ * @note Behaviour is undefined if the copying happens between buffers that overlap.
  * @note Use rcc_memmove if this is not intended.
  */
 void	*rcc_memcpy(void *dest, const void *src, size_t num)
@@ -71,8 +71,8 @@ void	*rcc_memcpy(void *dest, const void *src, size_t num)
 /**
  * @brief Copy @p num bytes pointed from @p src to @p dest.
  *
- * @param[in,out]	dest	Pointer to the destination memory area.
- * @param[in]		src		Pointer to the source memory area.
+ * @param[in,out]	dest	Pointer to the destination buffer.
+ * @param[in]		src		Pointer to the source buffer.
  * @param[in]		num		Amount of bytes to copy from @p src.
  *
  * @return Pointer after the last written byte to @p dest.
@@ -92,8 +92,8 @@ void	*rcc_mempcpy(void *dest, const void *src, size_t num)
 /**
  * @brief Copy @p num bytes pointed from @p src to @p dest.
  *
- * @param[in,out]	dest	Pointer to the destination memory area.
- * @param[in]		src		Pointer to the source memory area.
+ * @param[in,out]	dest	Pointer to the destination buffer.
+ * @param[in]		src		Pointer to the source buffer.
  * @param[in]		num		Amount of bytes to copy from @p src.
  *
  * @return Pointer to @p dest.
@@ -116,17 +116,17 @@ void	*rcc_memmove(void *dest, const void *src, size_t num)
 }
 
 /**
- * @brief Compare the first @p num bytes between @p ptr1 and @p ptr2.
+ * @brief Compare the first @p num bytes between @p buf1 and @p buf2.
  *
- * @param[in]	ptr1	Pointer to the memory area.
- * @param[in]	ptr2	Pointer to the memory area.
+ * @param[in]	buf1	Pointer to the first buffer.
+ * @param[in]	buf2	Pointer to the second buffer.
  * @param[in]	num		Amount of bytes to compare.
  *
- * @retval 0 if @p ptr1 and @p ptr2 are equal.
- * @retval A negative value if @p ptr1 is less than @p ptr2.
- * @retval A positive value if @p ptr1 is greater than @p ptr2.
+ * @retval 0 if @p buf1 and @p buf2 are equal.
+ * @retval A negative value if @p buf1 is less than @p buf2.
+ * @retval A positive value if @p buf1 is greater than @p buf2.
  */
-int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num)
+int32_t	rcc_memcmp(const void *buf1, const void *buf2, size_t num)
 {
 	size_t	i = 0;
 
@@ -134,9 +134,9 @@ int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	{
 		return (0);
 	}
-	while (((const unsigned char *)ptr1)[i] == ((const unsigned char *)ptr2)[i] && --num > 0)
+	while (((const unsigned char *)buf1)[i] == ((const unsigned char *)buf2)[i] && --num > 0)
 	{
 		i++;
 	}
-	return (((const unsigned char *)ptr1)[i] - ((const unsigned char *)ptr2)[i]);
+	return (((const unsigned char *)buf1)[i] - ((const unsigned char *)buf2)[i]);
 }

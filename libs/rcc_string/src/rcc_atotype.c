@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:		rcc_atotype.c                                                 */
+/* File:        rcc_atotype.c                                                 */
 /*                                                                            */
-/* Author:		Racer911-1                                                    */
-/* Created:		2025/07/25 22:13:20                                           */
+/* Author:      Racer911-1                                                    */
+/* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
-/* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 14:57:44                                           */
+/* Modified by: Racer911-1                                                    */
+/* Modified:    2025/08/14 23:01:57                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
 
 /**
- * @brief Convert @p str to an int.
+ * @brief Convert @p str to a signed int.
  *
  * @param[in]	str	The String to convert.
  *
@@ -47,7 +47,7 @@ int32_t	rcc_atoi(const char *str)
 }
 
 /**
- * @brief Convert @p str to a long.
+ * @brief Convert @p str to a signed long.
  *
  * @param[in]	str	The String to convert.
  *

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:		rcc_string.h                                                  */
+/* File:        rcc_string.h                                                  */
 /*                                                                            */
-/* Author:		Racer911-1                                                    */
-/* Created:		2025/07/25 22:13:20                                           */
+/* Author:      Racer911-1                                                    */
+/* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
-/* Modified by:	Racer911-1                                                    */
-/* Modified:	2025/08/03 22:32:06                                           */
+/* Modified by: Racer911-1                                                    */
+/* Modified:    2025/08/14 23:01:57                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,6 +61,7 @@ char	*rcc_stpcpy(char *dest, const char *src);
 char	*rcc_stpncpy(char *dest, const char *src, size_t num);
 char	*rcc_strcpy(char *dest, const char *src);
 char	*rcc_strncpy(char *dest, const char *src, size_t num);
+size_t	rcc_strlcpy(char *dest, const char *src, size_t num);
 char	*rcc_strcat(char *dest, const char *src);
 char	*rcc_strncat(char *dest, const char *src, size_t num);
 // rcc_strdup.c
