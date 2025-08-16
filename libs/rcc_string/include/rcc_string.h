@@ -6,7 +6,7 @@
 /* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
+/* Modified:    2025/08/16 21:26:01                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,7 @@ char	*rcc_strncpy(char *dest, const char *src, size_t num);
 size_t	rcc_strlcpy(char *dest, const char *src, size_t num);
 char	*rcc_strcat(char *dest, const char *src);
 char	*rcc_strncat(char *dest, const char *src, size_t num);
+size_t	rcc_strlcat(char *dest, const char *src, size_t num);
 // rcc_strdup.c
 
 char	*rcc_strdup(const char *str);
@@ -77,6 +78,10 @@ char	*rcc_strstr(const char *big, const char *little);
 char	*rcc_strcasestr(const char *big, const char *little);
 char	*rcc_strnstr(const char *big, const char *little, size_t num);
 char	*rcc_strcnasestr(const char *big, const char *little, size_t num);
+
+// rcc_strjoin.c
+
+char	*rcc_strjoin(const char *dest, const char* src);
 // rcc_strlen.c
 
 size_t	rcc_strlen(const char *str);

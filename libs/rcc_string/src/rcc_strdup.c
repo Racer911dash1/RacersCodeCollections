@@ -6,7 +6,7 @@
 /* Created:     2025/07/27 18:45:05                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:02:01                                           */
+/* Modified:    2025/08/16 21:46:04                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
  *
  * @return Pointer to the duplicated string, or NULL or failure.
  *
- * @warning Caller is in control of free().
+ * @warning Caller owns free().
  */
 char	*rcc_strdup(const char *str)
 {
@@ -39,7 +39,7 @@ char	*rcc_strdup(const char *str)
  *
  * @return Pointer to the duplicated string, or NULL or failure.
  *
- * @warning Caller is in control of free().
+ * @warning Caller owns free().
  */
 char	*rcc_strndup(const char *str, size_t num)
 {

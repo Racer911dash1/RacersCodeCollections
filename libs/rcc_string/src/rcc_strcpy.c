@@ -6,7 +6,7 @@
 /* Created:     2025/07/27 19:19:13                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
+/* Modified:    2025/08/16 21:43:37                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -158,8 +158,8 @@ char	*rcc_strncat(char *dest, const char *src, size_t num)
 /**
  * @brief Concatenate @p num bytes of the poiner @p src to @p dest.
  *
- * @param[in,out]	dest	Pointer to the NUL-terminated destination string.
- * @param[in]		src		Pointer to the NUL-terminated string to concatenate.
+ * @param[in,out]	dest	Pointer to the null terminated destination string.
+ * @param[in]		src		Pointer to the null terminated string to concatenate.
  * @param[in]		num		Maximum amount of bytes to concatenate.
  *
  * @return The total length of the string it tried to create. That is, the initial
