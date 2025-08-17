@@ -6,7 +6,7 @@
 /* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/16 21:26:01                                           */
+/* Modified:    2025/08/17 10:53:21                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,13 @@ char	*rcc_strjoin(const char *dest, const char* src);
 
 size_t	rcc_strlen(const char *str);
 size_t	rcc_strnlen(const char *str, size_t maxlen);
+// rcc_strtrim.c
+
+char	*rcc_strtrim(const char *str, const char *set);
+char	*rcc_strtrimstart(const char *str, const char *set);
+char	*rcc_strtrimprefix(const char *str, const char *prefix);
+char	*rcc_strtrimend(const char *str, const char *set);
+char	*rcc_strtrimsuffix(const char *str, const char *suffix);
 // rcc_tocase.c
 
 int32_t	rcc_tolower(int32_t c);

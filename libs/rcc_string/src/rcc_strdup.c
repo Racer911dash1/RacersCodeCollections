@@ -6,7 +6,7 @@
 /* Created:     2025/07/27 18:45:05                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/16 21:46:04                                           */
+/* Modified:    2025/08/17 11:21:27                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  *
  * @param[in]	str	String to duplicate.
  *
- * @return Pointer to the duplicated string, or NULL or failure.
+ * @return Pointer to the duplicated string, or NULL on failure.
  *
  * @warning Caller owns free().
  */
@@ -37,7 +37,7 @@ char	*rcc_strdup(const char *str)
  *
  * @param[in]	str	String to duplicate.
  *
- * @return Pointer to the duplicated string, or NULL or failure.
+ * @return Pointer to the duplicated string, or NULL on failure.
  *
  * @warning Caller owns free().
  */
