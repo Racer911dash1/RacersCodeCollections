@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:        rcc_string.h                                                  */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/25 22:13:20                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/17 17:58:22                                           */
+/*                                                        :::      ::::::::   */
+/*   rcc_string.h                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 0911/01/01 00:00:00 by                   #+#    #+#             */
+/*   Updated: 2025/08/18 11:50:36 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
 // rcc_free.c
 
-void	rcc_free2dstr(char **ptr);
+void	rcc_free2d(void **ptr, size_t size);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);

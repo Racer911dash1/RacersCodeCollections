@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:        rcc_free.c                                                    */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/08/17 16:53:03                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/17 17:24:35                                           */
+/*                                                        :::      ::::::::   */
+/*   rcc_free.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 0911/01/01 00:00:00 by                   #+#    #+#             */
+/*   Updated: 2025/08/18 11:55:34 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
 
-void	rcc_free2dstr(char **ptr)
+void	rcc_free2d(void **ptr, size_t size)
 {
-	for (size_t i = 0; ptr[i]; i++)
+	for (size_t i = 0; i < size ; i++)
 	{
 		free(ptr[i]);
 	}
