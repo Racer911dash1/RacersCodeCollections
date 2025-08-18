@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:        rcc_memory.c                                                  */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/25 23:01:37                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
+/*                                                        :::      ::::::::   */
+/*   rcc_memory.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 0911/01/01 00:00:00 by                   #+#    #+#             */
+/*   Updated: 2025/08/18 12:05:39 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	*rcc_bzero(void *buffer, size_t num)
  *
  * @return Pointer to the buffer filled with @p c characters.
  */
-void	*rcc_memset(void *buffer, int c, size_t num)
+void	*rcc_memset(void *buffer, int32_t c, size_t num)
 {
 	for (size_t i = 0; i < num; i++)
 	{

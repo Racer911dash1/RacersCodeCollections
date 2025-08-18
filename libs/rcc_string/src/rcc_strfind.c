@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/* File:        rcc_strfind.c                                                 */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/25 22:13:20                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
+/*                                                        :::      ::::::::   */
+/*   rcc_strfind.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 0911/01/01 00:00:00 by                   #+#    #+#             */
+/*   Updated: 2025/08/18 12:05:42 by dbakker          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  *
  * @return Pointer to the first occurrence of str, or NULL on failure.
  */
-char	*rcc_strchr(const char *str, int c)
+char	*rcc_strchr(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;
@@ -44,7 +44,7 @@ char	*rcc_strchr(const char *str, int c)
  *
  * @return Pointer to the first occurrence of str, or pointer to the null byte.
  */
-char	*rcc_strchrnul(const char *str, int c)
+char	*rcc_strchrnul(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;
@@ -64,7 +64,7 @@ char	*rcc_strchrnul(const char *str, int c)
  *
  * @return Pointer to the last occurrence of str, or NULL on failure.
  */
-char	*rcc_strrchr(const char *str, int c)
+char	*rcc_strrchr(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;
