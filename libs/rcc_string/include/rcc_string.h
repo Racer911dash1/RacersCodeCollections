@@ -6,7 +6,11 @@
 /*   By: dbakker <dbakker@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 0911/01/01 00:00:00 by                   #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2025/08/18 12:05:39 by dbakker          ###   ########.fr       */
+=======
+/*   Updated: 2025/08/18 11:50:36 by dbakker          ###   ########.fr       */
+>>>>>>> split
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +32,7 @@ int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
 // rcc_free.c
 
-void	rcc_free2dstr(char **ptr);
+void	rcc_free2d(void **ptr, size_t size);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int32_t c);
