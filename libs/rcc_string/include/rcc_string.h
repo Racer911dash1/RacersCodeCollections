@@ -6,7 +6,7 @@
 /* Created:     2025/07/25 22:13:20                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/17 10:53:21                                           */
+/* Modified:    2025/08/17 17:58:22                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ void	*rcc_calloc(size_t nmemb, size_t size);
 int32_t	rcc_atoi(const char *str);
 int64_t	rcc_atol(const char *str);
 double	rcc_atod(const char *str);
+// rcc_free.c
+
+void	rcc_free2dstr(char **ptr);
 // rcc_isthing.c
 
 bool	rcc_isalnum(int c);
@@ -49,6 +52,9 @@ void	*rcc_memcpy(void *dest, const void *srcs, size_t num);
 void	*rcc_mempcpy(void *dest, const void *src, size_t num);
 void	*rcc_memmove(void *dest, const void *src, size_t num);
 int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
+// rcc_split.c
+
+char	**rcc_split(const char *str, const char delimiter);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
@@ -88,11 +94,11 @@ size_t	rcc_strlen(const char *str);
 size_t	rcc_strnlen(const char *str, size_t maxlen);
 // rcc_strtrim.c
 
-char	*rcc_strtrim(const char *str, const char *set);
-char	*rcc_strtrimstart(const char *str, const char *set);
-char	*rcc_strtrimprefix(const char *str, const char *prefix);
-char	*rcc_strtrimend(const char *str, const char *set);
-char	*rcc_strtrimsuffix(const char *str, const char *suffix);
+char	*rcc_trim(const char *str, const char *set);
+char	*rcc_trimstart(const char *str, const char *set);
+char	*rcc_trimprefix(const char *str, const char *prefix);
+char	*rcc_trimend(const char *str, const char *set);
+char	*rcc_trimsuffix(const char *str, const char *suffix);
 // rcc_tocase.c
 
 int32_t	rcc_tolower(int32_t c);

@@ -6,12 +6,11 @@
 /* Created:     2025/08/16 22:47:47                                           */
 /*                                                                            */
 /* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/17 11:29:10                                           */
+/* Modified:    2025/08/17 17:34:41                                           */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "rcc_string.h"
-#include <stdio.h>
 
 /**
  * @brief Create a new string by trimming the start and end of @p str, removing
@@ -26,7 +25,7 @@
  *
  * @warning Caller owns free().
  */
-char	*rcc_strtrim(const char *str, const char *set)
+char	*rcc_trim(const char *str, const char *set)
 {
 	char	*trimmed;
 	int32_t	start;
@@ -73,7 +72,7 @@ char	*rcc_strtrim(const char *str, const char *set)
  *
  * @warning Caller owns free().
  */
-char	*rcc_strtrimstart(const char *str, const char *set)
+char	*rcc_trimstart(const char *str, const char *set)
 {
 	char	*trimmed;
 	size_t	start;
@@ -114,7 +113,7 @@ char	*rcc_strtrimstart(const char *str, const char *set)
  *
  * @warning Caller owns free().
  */
-char	*rcc_strtrimprefix(const char *str, const char *prefix)
+char	*rcc_trimprefix(const char *str, const char *prefix)
 {
 	char	*trimmed;
 	size_t	prefixlen;
@@ -151,7 +150,7 @@ char	*rcc_strtrimprefix(const char *str, const char *prefix)
  *
  * @warning Caller owns free().
  */
-char	*rcc_strtrimend(const char *str, const char *set)
+char	*rcc_trimend(const char *str, const char *set)
 {
 	char	*trimmed;
 	int32_t	end;
@@ -192,7 +191,7 @@ char	*rcc_strtrimend(const char *str, const char *set)
  *
  * @warning Caller owns free().
  */
-char	*rcc_strtrimsuffix(const char *str, const char *suffix)
+char	*rcc_trimsuffix(const char *str, const char *suffix)
 {
 	char	*trimmed;
 	size_t	suffixlen;
