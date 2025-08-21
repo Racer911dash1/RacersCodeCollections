@@ -26,7 +26,7 @@ void	*rcc_bzero(void *buffer, size_t num)
  *
  * @return Pointer to the buffer filled with @p c characters.
  */
-void	*rcc_memset(void *buffer, int c, size_t num)
+void	*rcc_memset(void *buffer, int32_t c, size_t num)
 {
 	for (size_t i = 0; i < num; i++)
 	{
@@ -126,5 +126,5 @@ int32_t	rcc_memcmp(const void *buf1, const void *buf2, size_t num)
 	{
 		i++;
 	}
-	return (((const unsigned char *)buf1)[i] - ((const unsigned char *)buf2)[i]);
+	return (((const uint8_t *)buf1)[i] - ((const uint8_t *)buf2)[i]);
 }

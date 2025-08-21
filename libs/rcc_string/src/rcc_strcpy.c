@@ -35,7 +35,7 @@ char	*rcc_stpncpy(char *dest, const char *src, size_t num)
 
 	for (i = 0; src[i] && i < num; i++)
 	{
-		((unsigned char *)dest)[i] = ((unsigned const char *)src)[i];
+		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
 	}
 	for (size_t j = 0; i + j < num; j++)
 	{

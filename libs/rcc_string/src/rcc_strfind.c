@@ -8,7 +8,7 @@
  *
  * @return Pointer to the first occurrence of str, or NULL on failure.
  */
-char	*rcc_strchr(const char *str, int c)
+char	*rcc_strchr(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;
@@ -32,7 +32,7 @@ char	*rcc_strchr(const char *str, int c)
  *
  * @return Pointer to the first occurrence of str, or pointer to the null byte.
  */
-char	*rcc_strchrnul(const char *str, int c)
+char	*rcc_strchrnul(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;
@@ -52,7 +52,7 @@ char	*rcc_strchrnul(const char *str, int c)
  *
  * @return Pointer to the last occurrence of str, or NULL on failure.
  */
-char	*rcc_strrchr(const char *str, int c)
+char	*rcc_strrchr(const char *str, int32_t c)
 {
 	size_t	i = 0;
 	char	*cpystr = (char *)str;

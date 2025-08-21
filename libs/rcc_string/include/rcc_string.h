@@ -19,23 +19,23 @@ double	rcc_atod(const char *str);
 void	rcc_free2dstr(char **ptr);
 // rcc_isthing.c
 
-bool	rcc_isalnum(int c);
-bool	rcc_isalpha(int c);
-bool	rcc_iscntrl(int c);
-bool	rcc_isdigit(int c);
-bool	rcc_isgraph(int c);
-bool	rcc_islower(int c);
-bool	rcc_isprint(int c);
-bool	rcc_ispunct(int c);
-bool	rcc_isspace(int c);
-bool	rcc_isupper(int c);
-bool	rcc_isxdigit(int c);
-bool	rcc_isascii(int c);
-bool	rcc_isblank(int c);
+bool	rcc_isalnum(int32_t c);
+bool	rcc_isalpha(int32_t c);
+bool	rcc_iscntrl(int32_t c);
+bool	rcc_isdigit(int32_t c);
+bool	rcc_isgraph(int32_t c);
+bool	rcc_islower(int32_t c);
+bool	rcc_isprint(int32_t c);
+bool	rcc_ispunct(int32_t c);
+bool	rcc_isspace(int32_t c);
+bool	rcc_isupper(int32_t c);
+bool	rcc_isxdigit(int32_t c);
+bool	rcc_isascii(int32_t c);
+bool	rcc_isblank(int32_t c);
 // rcc_memory.c
 
 void	*rcc_bzero(void *buffer, size_t num);
-void	*rcc_memset(void *buffer, int c, size_t num);
+void	*rcc_memset(void *buffer, int32_t c, size_t num);
 void	*rcc_memcpy(void *dest, const void *srcs, size_t num);
 void	*rcc_mempcpy(void *dest, const void *src, size_t num);
 void	*rcc_memmove(void *dest, const void *src, size_t num);
@@ -65,9 +65,9 @@ char	*rcc_strdup(const char *str);
 char	*rcc_strndup(const char *str, size_t num);
 // rcc_strfind.c
 
-char	*rcc_strchr(const char *str, int c);
-char	*rcc_strchrnul(const char *str, int c);
-char	*rcc_strrchr(const char *str, int c);
+char	*rcc_strchr(const char *str, int32_t c);
+char	*rcc_strchrnul(const char *str, int32_t c);
+char	*rcc_strrchr(const char *str, int32_t c);
 char	*rcc_strstr(const char *big, const char *little);
 char	*rcc_strcasestr(const char *big, const char *little);
 char	*rcc_strnstr(const char *big, const char *little, size_t num);

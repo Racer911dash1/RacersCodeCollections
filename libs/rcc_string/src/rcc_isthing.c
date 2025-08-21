@@ -7,7 +7,7 @@
  *
  * @return true if @p c is alphanumeric, or false otherwise.
  */
-bool rcc_isalnum(int c)
+bool rcc_isalnum(int32_t c)
 {
 	return (rcc_isalpha(c) || rcc_isdigit(c));
 }
@@ -19,7 +19,7 @@ bool rcc_isalnum(int c)
  *
  * @return true if @p c is alphabetic, or false otherwise.
  */
-bool rcc_isalpha(int c)
+bool rcc_isalpha(int32_t c)
 {
 	return (rcc_islower(c) || rcc_isupper(c));
 }
@@ -31,7 +31,7 @@ bool rcc_isalpha(int c)
  *
  * @return true if @p c is a control character, or false otherwise.
  */
-bool rcc_iscntrl(int c)
+bool rcc_iscntrl(int32_t c)
 {
 	return ((c >= 0 && c <= 31) || c == 127);
 }
@@ -43,7 +43,7 @@ bool rcc_iscntrl(int c)
  *
  * @return true if @p c is a digit, or false otherwise.
  */
-bool rcc_isdigit(int c)
+bool rcc_isdigit(int32_t c)
 {
 	return (c >= '0' && c <= '9');
 }
@@ -55,7 +55,7 @@ bool rcc_isdigit(int c)
  *
  * @return true if @p c is a non-space printable character, or false otherwise.
  */
-bool rcc_isgraph(int c)
+bool rcc_isgraph(int32_t c)
 {
 	return (c >= '!' && c <= '~');
 }
@@ -67,7 +67,7 @@ bool rcc_isgraph(int c)
  *
  * @return true if @p c is lowercase, or false otherwise.
  */
-bool rcc_islower(int c)
+bool rcc_islower(int32_t c)
 {
 	return (c >= 'a' && c <= 'z');
 }
@@ -79,7 +79,7 @@ bool rcc_islower(int c)
  *
  * @return true if @p c is a printable character, or false otherwise.
  */
-bool rcc_isprint(int c)
+bool rcc_isprint(int32_t c)
 {
 	return (rcc_isgraph(c) || c == ' ');
 }
@@ -91,7 +91,7 @@ bool rcc_isprint(int c)
  *
  * @return true if @p c is not an alphanumeric or space character, or false otherwise.
  */
-bool rcc_ispunct(int c)
+bool rcc_ispunct(int32_t c)
 {
 	return (!rcc_isalnum(c) || c == ' ');
 }
@@ -103,7 +103,7 @@ bool rcc_ispunct(int c)
  *
  * @return true if @p c is a whitespace, or false otherwise.
  */
-bool rcc_isspace(int c)
+bool rcc_isspace(int32_t c)
 {
 	return (c == ' ' || (c >= '\t' && c <= '\r'));
 }
@@ -115,7 +115,7 @@ bool rcc_isspace(int c)
  *
  * @return true if @p c is uppercase, or false otherwise.
  */
-bool rcc_isupper(int c)
+bool rcc_isupper(int32_t c)
 {
 	return (c >= 'A' && c <= 'Z');
 }
@@ -127,7 +127,7 @@ bool rcc_isupper(int c)
  *
  * @return true if @p c is a hexadecimal digit, or false otherwise.
  */
-bool rcc_isxdigit(int c)
+bool rcc_isxdigit(int32_t c)
 {
 	return (rcc_isdigit(c) || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F'));
 }
@@ -141,7 +141,7 @@ bool rcc_isxdigit(int c)
  *
  * @return true if @p c is an ascii character, or false otherwise.
  */
-bool rcc_isascii(int c)
+bool rcc_isascii(int32_t c)
 {
 	return (c >= 0 && c <= 127);
 }
@@ -153,7 +153,7 @@ bool rcc_isascii(int c)
  *
  * @return true if @p c is a space or a tab, or false otherwise.
  */
-bool rcc_isblank(int c)
+bool rcc_isblank(int32_t c)
 {
 	return (c == ' ' || c == '\t');
 }
