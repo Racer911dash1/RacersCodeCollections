@@ -1,32 +1,43 @@
-/* ************************************************************************** */
-/*                                                                            */
-/* File:        rcc_split.c                                                   */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/08/17 16:47:27                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/17 21:55:05                                           */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "rcc_string.h"
-#include <stdio.h>
 
+/**
+ * @brief Count the amount of words in @p str along each delimiter character.
+ *
+ * Repeated delimiters will be treated as a single character.
+ *
+ * @param[in]	str			The string to count the words from.
+ * @param[in]	delimiter	The delimiter character to split the string with.
+ *
+ * @return The amount of words found inside @p str.
+ */
 static size_t	rcc_count_words(const char *str, const char delimiter)
 {
-	size_t	word_count = 1;
+	bool	is_word = false;
+	size_t	word_count = 0;
 
 	for (size_t i = 0; str[i]; i++)
 	{
-		if (str[i] == delimiter)
+		if (is_word == false && str[i] != delimiter)
 		{
+			is_word = true;
 			word_count++;
+		}
+		if (is_word == true && str[i] == delimiter)
+		{
+			is_word = false;
 		}
 	}
 	return (word_count);
 }
 
+/**
+ * @brief The length of @p str until it reaches a @p delimiter character.
+ *
+ * @param[in]	str			The string to find the first occurence of @p delimiter.
+ * @param[in]	delimiter	The stopping point for @p str to iterate.
+ *
+ * @return The length of @p str until the @p delimiter character.
+ */
 static size_t	rcc_word_length(const char *str, const char delimiter)
 {
 	size_t	length = 0;
@@ -43,9 +54,9 @@ static size_t	rcc_word_length(const char *str, const char delimiter)
 }
 
 /**
- * @brief Create an array of pointers by splitting @p str along each @p delimiter.
+ * @brief Create an array of pointers by splitting @p str along each @p delimiter character.
  *
- * Repeated delimiters inside of @p str will be treated as a single delimiter.
+ * Repeated delimiters inside of @p str will be treated as a single character.
  *
  * @param[in]	str			The string to split.
  * @param[in]	delimiter	The delimiter that splits @p str.
