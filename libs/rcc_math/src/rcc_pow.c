@@ -12,7 +12,7 @@ int32_t	rcc_powi(int32_t base, int32_t pow)
 {
 	int32_t	temp = base;
 
-	if (pow < 0)
+	if (pow < 0 || base == 0)
 	{
 		return (0);
 	}

@@ -17,7 +17,7 @@ int32_t rcc_dividei(int32_t a, int32_t b);
 int32_t	rcc_powi(int32_t base, int32_t pow);
 // rcc_sqrt.c
 
-int32_t	rcc_sqrti(int32_t num);
+uint32_t	rcc_sqrti(uint32_t num);
 // rcc_variadic_arithmetic
 
 int32_t	rcc_vmodulo(size_t nums, ...);
