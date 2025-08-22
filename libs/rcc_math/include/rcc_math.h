@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/* File:        rcc_math.h                                                    */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/23 17:18:19                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
-/*                                                                            */
-/* ************************************************************************** */
-
 #ifndef RCC_MATH_H
 # define RCC_MATH_H
 
@@ -29,7 +17,7 @@ int32_t rcc_dividei(int32_t a, int32_t b);
 int32_t	rcc_powi(int32_t base, int32_t pow);
 // rcc_sqrt.c
 
-int32_t	rcc_sqrti(int32_t num);
+uint32_t	rcc_sqrti(uint32_t num);
 // rcc_variadic_arithmetic
 
 int32_t	rcc_vmodulo(size_t nums, ...);

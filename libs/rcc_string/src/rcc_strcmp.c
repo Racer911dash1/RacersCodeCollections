@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/* File:        rcc_strcmp.c                                                  */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/25 22:13:20                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "rcc_string.h"
 
 /**
@@ -34,7 +22,7 @@ int32_t	rcc_strcmp(const char *str1, const char *str2)
 		}
 		i++;
 	}
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	return ((uint8_t)str1[i] - (uint8_t)str2[i]);
 }
 
 /**
@@ -59,7 +47,7 @@ int32_t	rcc_strcasecmp(const char *str1, const char *str2)
 		}
 		i++;
 	}
-	return ((unsigned char)rcc_tolower(str1[i]) - (unsigned char)rcc_tolower(str2[i]));
+	return ((uint8_t)rcc_tolower(str1[i]) - (uint8_t)rcc_tolower(str2[i]));
 }
 
 /**
@@ -89,7 +77,7 @@ int32_t	rcc_strncmp(const char *str1, const char *str2, size_t num)
 		}
 		i++;
 	}
-	return ((unsigned char)str1[i] - (unsigned char)str2[i]);
+	return ((uint8_t)str1[i] - (uint8_t)str2[i]);
 }
 
 /**
@@ -119,5 +107,5 @@ int32_t	rcc_strncasecmp(const char *str1, const char *str2, size_t num)
 		}
 		i++;
 	}
-	return ((unsigned char)rcc_tolower(str1[i]) - (unsigned char)rcc_tolower(str2[i]));
+	return ((uint8_t)rcc_tolower(str1[i]) - (uint8_t)rcc_tolower(str2[i]));
 }

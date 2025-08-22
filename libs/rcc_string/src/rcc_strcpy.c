@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/* File:        rcc_strcpy.c                                                  */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/27 19:19:13                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/16 21:43:37                                           */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "rcc_string.h"
 
 /**
@@ -47,7 +35,7 @@ char	*rcc_stpncpy(char *dest, const char *src, size_t num)
 
 	for (i = 0; src[i] && i < num; i++)
 	{
-		((unsigned char *)dest)[i] = ((unsigned const char *)src)[i];
+		((unsigned char *)dest)[i] = ((const unsigned char *)src)[i];
 	}
 	for (size_t j = 0; i + j < num; j++)
 	{

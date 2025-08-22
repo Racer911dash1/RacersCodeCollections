@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -10,6 +11,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+=======
+>>>>>>> f342415d3b855e5c49965b09a9e7c02f940608fa
 #include "rcc_string.h"
 
 /**
@@ -138,5 +141,5 @@ int32_t	rcc_memcmp(const void *buf1, const void *buf2, size_t num)
 	{
 		i++;
 	}
-	return (((const unsigned char *)buf1)[i] - ((const unsigned char *)buf2)[i]);
+	return (((const uint8_t *)buf1)[i] - ((const uint8_t *)buf2)[i]);
 }

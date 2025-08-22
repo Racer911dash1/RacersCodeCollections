@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/* File:        rcc_sqrt.c                                                    */
-/*                                                                            */
-/* Author:      Racer911-1                                                    */
-/* Created:     2025/07/25 22:13:20                                           */
-/*                                                                            */
-/* Modified by: Racer911-1                                                    */
-/* Modified:    2025/08/14 23:01:57                                           */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "rcc_math.h"
 
 /**
@@ -21,17 +9,30 @@
  *
  * @note rcc_sqrti returns 0 if the square root of @p num is not a whole number.
  */
-int32_t	rcc_sqrti(int32_t num)
+uint32_t	rcc_sqrti(uint32_t num)
 {
-	for (int32_t i = 1; i * i <= num; i++)
+	uint32_t	left = 0;
+	uint32_t	right = num - 1;
+	uint64_t	middle;
+
+	if (num == 1)
 	{
-		if (i * i > INT32_MAX / i)
+		return (1);
+	}
+	while (left <= right)
+	{
+		middle = left + ((right - left) / 2);
+		if (middle * middle < (uint64_t)num)
 		{
-			break ;
+			left = middle + 1;
 		}
-		if (i * i == num)
+		else if (middle * middle > (uint64_t)num)
 		{
-			return (i);
+			right = middle - 1;
+		}
+		else
+		{
+			return (middle);
 		}
 	}
 	return (0);
