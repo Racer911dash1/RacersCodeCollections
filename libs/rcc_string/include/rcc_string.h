@@ -8,7 +8,7 @@
 
 // rcc_alloc.c
 
-void	*rcc_calloc(size_t nmemb, size_t size);
+void	*rcc_calloc(size_t num, size_t size);
 // rcc_atotype.c
 
 int32_t	rcc_atoi(const char *str);
@@ -42,7 +42,7 @@ void	*rcc_memmove(void *dest, const void *src, size_t num);
 int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_split.c
 
-char	**rcc_split(const char *str, const char delimiter);
+char	**rcc_split(const char *str, int32_t delimiter);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
@@ -72,7 +72,6 @@ char	*rcc_strstr(const char *big, const char *little);
 char	*rcc_strcasestr(const char *big, const char *little);
 char	*rcc_strnstr(const char *big, const char *little, size_t num);
 char	*rcc_strcnasestr(const char *big, const char *little, size_t num);
-
 // rcc_strjoin.c
 
 char	*rcc_strjoin(const char *dest, const char* src);

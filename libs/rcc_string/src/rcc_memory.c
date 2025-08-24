@@ -126,5 +126,5 @@ int32_t	rcc_memcmp(const void *buf1, const void *buf2, size_t num)
 	{
 		i++;
 	}
-	return (((const uint8_t *)buf1)[i] - ((const uint8_t *)buf2)[i]);
+	return (((uint8_t *)buf1)[i] - ((uint8_t *)buf2)[i]);
 }

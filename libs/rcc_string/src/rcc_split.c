@@ -10,7 +10,7 @@
  *
  * @return The amount of words found inside @p str.
  */
-static size_t	rcc_count_words(const char *str, const char delimiter)
+static size_t	rcc_count_words(const char *str, int32_t delimiter)
 {
 	bool	is_word = false;
 	size_t	word_count = 0;
@@ -43,7 +43,7 @@ static size_t	rcc_count_words(const char *str, const char delimiter)
  *
  * @return The length of @p str until the @p delimiter character.
  */
-static size_t	rcc_word_length(const char *str, const char delimiter)
+static size_t	rcc_word_length(const char *str, int32_t delimiter)
 {
 	size_t	length = 0;
 
@@ -70,7 +70,7 @@ static size_t	rcc_word_length(const char *str, const char delimiter)
  *
  * @warning Caller owns free().
  */
-char	**rcc_split(const char *str, const char delimiter)
+char	**rcc_split(const char *str, int32_t delimiter)
 {
 	char	**split;
 	size_t	word_count;
