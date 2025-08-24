@@ -43,6 +43,12 @@ int32_t	rcc_memcmp(const void *ptr1, const void *ptr2, size_t num);
 // rcc_split.c
 
 char	**rcc_split(const char *str, int32_t delimiter);
+// rcc_stradd.c
+
+char	*rcc_padleft(const char *str, int32_t pad, size_t num);
+char	*rcc_padright(const char *str, int32_t pad, size_t num);
+char	*rcc_fillleft(const char *str, int32_t fill, size_t num);
+char	*rcc_fillright(const char *str, int32_t fill, size_t num);
 // rcc_strcmp.c
 
 int32_t	rcc_strcmp(const char *str1, const char *str2);
