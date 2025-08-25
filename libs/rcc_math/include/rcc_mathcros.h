@@ -83,4 +83,31 @@
 	long double:		__rcc_multiply_ldouble \
 )(a, b)
 
+/**
+ * @brief Compute the quotient of @p a and @p b.
+ *
+ * No overflow checks are performed. If arguments are non-decimal,
+ * it will floor the returning number.
+ *
+ * @param[in]	a	Number to divide.
+ * @param[in]	b	The divisor.
+ *
+ * @return The quotient of @p a and @p b.
+ */
+# define rcc_divide(a, b) _Generic((a), \
+	long long:			__rcc_divide_llong, \
+	int8_t:				__rcc_divide_int8, \
+	int16_t:			__rcc_divide_int16, \
+	int32_t:			__rcc_divide_int32, \
+	int64_t:			__rcc_divide_int64, \
+	unsigned long long:	__rcc_divide_ullong, \
+	uint8_t:			__rcc_divide_uint8, \
+	uint16_t:			__rcc_divide_uint16, \
+	uint32_t:			__rcc_divide_uint32, \
+	uint64_t:			__rcc_divide_uint64, \
+	float:				__rcc_divide_float, \
+	double:				__rcc_divide_double, \
+	long double:		__rcc_divide_ldouble \
+)(a, b)
+
 #endif
