@@ -31,4 +31,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all directories clean fclean re
+.PHONY: all clean fclean re
