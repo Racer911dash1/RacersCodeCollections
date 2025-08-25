@@ -5,13 +5,6 @@
 # include <stdarg.h>
 # include <stddef.h>
 
-// rcc_arithmetic.
-
-int32_t	rcc_modulo(int32_t a, int32_t b);
-int32_t	rcc_addi(int32_t a, int32_t b);
-int32_t	rcc_subtracti(int32_t a, int32_t b);
-int32_t	rcc_multiplyi(int32_t a, int32_t b);
-int32_t rcc_dividei(int32_t a, int32_t b);
 // rcc_pow.c
 
 int32_t	rcc_powi(int32_t base, int32_t pow);

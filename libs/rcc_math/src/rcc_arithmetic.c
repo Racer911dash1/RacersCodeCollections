@@ -1,86 +1,66 @@
-#include "rcc_math.h"
+#include "internal/rcc_mathcros_internal.h"
 
-/**
- * @brief Compute the remainder of dividing @p a by @p b.
- *
- * @param[in]	a	Number to divide.
- * @param[in]	b	The Divisor.
- *
- * @return The remainder of @p a and @p b, or 0 on error.
- *
- * @note No overflow checks are performed. Returns 0 if division by zero is performed.
- */
-int32_t	rcc_modulo(int32_t a, int32_t b)
-{
-	if (b == 0)
-	{
-		return (0);
-	}
-	return (a % b);
-}
-
-/**
- * @brief Compute the sum of @p a and @p b.
- *
- * @param[in]	a	Number to add.
- * @param[in]	b	The addend.
- *
- * @return The sum of @p a and @p b.
- *
- * @note No overflow checks are performed.
- */
-int32_t	rcc_addi(int32_t a, int32_t b)
+long long	__rcc_add_llong(long long a, long long b)
 {
 	return (a + b);
 }
 
-/**
- * @brief Compute the difference of @p a and @p b.
- *
- * @param[in]	a	Number to subtract.
- * @param[in]	b	The subtrahend.
- *
- * @return The difference of @p a and @p b.
- *
- * @note No overflow checks are performed.
- */
-int32_t	rcc_subtracti(int32_t a, int32_t b)
+int8_t	__rcc_add_int8(int8_t a, int8_t b)
 {
-	return (a - b);
+	return (a + b);
 }
 
-/**
- * @brief Compute the product of @p a and @p b.
- *
- * @param[in]	a	Number to multiply.
- * @param[in]	b	The multiplicand.
- *
- * @return The product of multiplying @p a, @p b times.
- *
- * @note No overflow checks are performed.
- */
-int32_t	rcc_multiplyi(int32_t a, int32_t b)
+int16_t	__rcc_add_int16(int16_t a, int16_t b)
 {
-	return (a * b);
+	return (a + b);
 }
 
-/**
- * @brief Compute the quotient of @p a and @p b.
- *
- * If the quotient is not a whole number, it will floor the return value.
- *
- * @param[in]	a	Number to divide.
- * @param[in]	b	The divisor.
- *
- * @return The quotient of dividing @p a by @p b, or 0 on error.
- *
- * @note No overflow checks are performed. Returns 0 if division by zero is performed.
- */
-int32_t	rcc_dividei(int32_t a, int32_t b)
+int32_t	__rcc_add_int32(int32_t a, int32_t b)
 {
-	if (b == 0)
-	{
-		return (0);
-	}
-	return (a / b);
+	return (a + b);
+}
+
+int64_t	__rcc_add_int64(int64_t a, int64_t b)
+{
+	return (a + b);
+}
+
+unsigned long long	__rcc_add_ullong(unsigned long long a, unsigned long long b)
+{
+	return (a + b);
+}
+
+uint8_t	__rcc_add_uint8(uint8_t a, uint8_t b)
+{
+	return (a + b);
+}
+
+uint16_t	__rcc_add_uint16(uint16_t a, uint16_t b)
+{
+	return (a + b);
+}
+
+uint32_t	__rcc_add_uint32(uint32_t a, uint32_t b)
+{
+	return (a + b);
+}
+
+uint64_t	__rcc_add_uint64(uint64_t a, uint64_t b)
+{
+	return (a + b);
+}
+
+float	__rcc_add_float(float a, float b)
+{
+	return (a + b);
+}
+
+double	__rcc_add_double(double a, double b)
+{
+	return (a + b);
+}
+
+long double	__rcc_add_ldouble(long double a, long double b)
+{
+	return (a + b);
 }
